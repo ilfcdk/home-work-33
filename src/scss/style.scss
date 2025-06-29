@@ -1,0 +1,18 @@
+@use "sass:color";
+
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f5f5;
+  color: #327;
+}
+
+h1 {
+  color: $primary-color;
+  display: flex;
+  transition: all 0.3s ease;
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}

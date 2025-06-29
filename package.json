@@ -1,0 +1,27 @@
+{
+  "name": "home-work-33",
+  "version": "1.0.0",
+  "description": "Веб-проект з Gulp: SCSS, live reload, autoprefixer, minify",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "Vitalii Ivanin",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^7.0.7",
+    "gulp": "^5.0.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-csscomb": "^0.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.63.6",
+    "sort-css-media-queries": "^3.0.1"
+  }
+}
