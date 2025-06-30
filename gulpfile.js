@@ -22,14 +22,14 @@ function scssTask() {
     }))
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('dist/css'))
+    .pipe(dest('css'))
     .pipe(browserSync.stream());
 }
 
 // Таск: копіювання HTML
 function htmlTask() {
   return src(files.htmlPath)
-    .pipe(dest('dist'))
+    .pipe(dest('.'))
     .pipe(browserSync.stream());
 }
 
@@ -37,7 +37,7 @@ function htmlTask() {
 function watchTask() {
   browserSync.init({
     server: {
-      baseDir: 'dist'
+      baseDir: '.'
     }
   });
   watch([files.scssPath], scssTask);

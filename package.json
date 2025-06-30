@@ -4,7 +4,8 @@
   "description": "Веб-проект з Gulp: SCSS, live reload, autoprefixer, minify",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Vitalii Ivanin",
   "devDependencies": {
@@ -12,6 +13,7 @@
     "browser-sync": "^3.0.4",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^7.0.7",
+    "gh-pages": "^6.3.0",
     "gulp": "^5.0.1",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
